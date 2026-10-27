@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Licences, payments and refunds
+    url: https://meow.qfiber.co.il/contact
+    about: Questions about a licence or an order go through the contact form, not a public issue.
+  - name: Security problem
+    url: https://meow.qfiber.co.il/contact
+    about: Please report vulnerabilities privately (see SECURITY.md).

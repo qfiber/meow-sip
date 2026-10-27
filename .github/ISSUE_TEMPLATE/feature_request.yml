@@ -1,0 +1,15 @@
+name: Feature request
+description: Something Meow should do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you would like Meow to do
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters to you
+      description: How you work today and what this would change. Which PBX you use helps too.

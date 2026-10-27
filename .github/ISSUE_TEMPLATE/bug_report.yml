@@ -1,0 +1,57 @@
+name: Bug report
+description: Something in Meow does not work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public. Do not include SIP passwords, licence keys or phone numbers.
+  - type: input
+    id: version
+    attributes:
+      label: Meow version
+      description: Shown at the bottom of Settings, and in About.
+      placeholder: "0.9.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 10
+        - Windows 11
+        - Ubuntu
+        - Fedora
+        - Debian
+        - Linux Mint
+        - Arch
+        - Other Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - Windows installer
+        - .deb
+        - .rpm
+        - AppImage
+  - type: input
+    id: pbx
+    attributes:
+      label: PBX or SIP provider
+      placeholder: "FreePBX 17 / Asterisk 22"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
